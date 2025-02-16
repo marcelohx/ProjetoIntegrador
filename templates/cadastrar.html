@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='stylecadastrar.css')}}">
+</head>
+<body>
+    <div class="cadastro-container">
+        <div class="cadastro-box">
+            
+               
+            
+            <h2>Cadastro</h2>
+            <form action="/salvar_cadastro" method="POST">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="text" name="telefone" placeholder="Telefone" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="password" name="confirmar_senha" placeholder="Confirmar Senha" required>
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+            </form>
+            <a href="/">
+                <button class="btn-voltar">Voltar</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Importa uma fonte para um design mais moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+/* Define o fundo com uma imagem */
+body {
+    background: url('imagens/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+/* Estiliza o container do login */
+.login-container {
+    background: #FFFAFA;  /* Branco Snow */
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+ 
+/* Adiciona uma imagem decorativa no topo da caixa */
+.login-container::before {
+    content: "";
+    background: url('imagens/backgroundamarelo.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+ 
+/* Estiliza o título */
+h2 {
+    color: #5086c1;  /* Azul */
+    margin-bottom: 20px;
+    margin-top: 60px; /* Para dar espaço à imagem */
+}
+ 
+/* Estiliza os campos de entrada do cadastro */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #5086c1; /* Azul */
+    border-radius: 5px;
+    background: #fff;
+    font-size: 16px;
+}
+ 
+/* Botão de Login */
+.btn-login {
+    background: #5086c1; /* Azul */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+ 
+.btn-login:hover {
+    background: #406a9a; /* Azul mais escuro no hover */
+}
+ 
+#imagemFundoCadastro{
+    width:100%;
+    height: 120px;
+}
+ 
+#imagemLogin{
+    width: 20%;
+}
+ 
+/* Botão de Cadastro */
+.btn-cadastrar {
+    background: #FFCA1A; /* Amarelo */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+ 
+.btn-cadastrar:hover {
+    background: #e0b115; /* Amarelo mais escuro no hover */
+}
+ 

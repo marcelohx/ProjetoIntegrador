@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot IA</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styleindex.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>BORA APRENDER!</h1>
+ 
+        <!-- Área do chat -->
+        <div id="chat-box" class="chat-box"></div>
+        
+        <!-- Campo de entrada de mensagem -->
+        <div class="input-user">
+        <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+        </div>
+
+         
+        <div class="input-area">   
+            <button onclick="sendMessage()" class="btn-enviar">Enviar</button>
+            <button onclick="startVoiceRecognition()" class="btn-voz">🎤</button>
+        </div>
+ 
+        <!-- Upload de PDF -->
+        <div>
+            <input type="file" id="pdf-upload"  style="border:2px solid #5086c1;background-color: #5086c1;padding: 10px;margin-right: 11px; padding-right: 17px; padding-left: 20px; border-radius: 4px;" accept="application/pdf">
+        </div>
+ 
+        <!-- Ativar/Desativar voz -->
+        <button id="voice-toggle" class="btn-voz">🔇 Voz Desativada</button>
+    
+    <button onclick="uploadPDF()" class="btn-enviar">Enviar PDF</button>
+ 
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

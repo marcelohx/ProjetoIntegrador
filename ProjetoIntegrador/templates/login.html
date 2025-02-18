@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='stylelogin.css')}}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="textarea"></div>
+        
+            <h2>Seja Bem-vindo!</h2>
+            <form action="/logar" method="POST">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <button type="submit" class="btn-login">Logar</button>
+            </form>
+            
+            <a href="/cadastrar">
+                <button type="button" class="btn-cadastrar">Cadastrar</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

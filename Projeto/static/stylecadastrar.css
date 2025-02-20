@@ -1,0 +1,105 @@
+/* Importa uma fonte para um design mais moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+/* Container da página de cadastro */
+.cadastro-container {
+    background: rgba(255, 250, 250, 0.9); /* Branco Snow com transparência */
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+ 
+/* Estiliza o título */
+h2 {
+    color: #5086c1;  /* Azul */
+    margin-bottom: 20px;
+    margin-top: 60px; /* Para dar espaço à imagem */
+}
+ 
+/* Define o fundo com uma imagem */
+body {
+    background: url('imagens/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+/* Fundo da tela de cadastro */
+.cadastro-body {
+    background: url('imagens/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+/* Estiliza o título da página de cadastro */
+.cadastro-container h1 {
+    color: #5086c1; /* Azul */
+    margin-bottom: 20px;
+}
+ 
+/* Estiliza os campos de entrada do cadastro */
+.cadastro-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #5086c1; /* Azul */
+    border-radius: 5px;
+    background: #fff;
+    font-size: 16px;
+}
+ 
+/* Botão de cadastrar na página de cadastro */
+.cadastro-container .btn-cadastrar {
+    background: #FFCA1A; /* Amarelo */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+ 
+.cadastro-container .btn-cadastrar:hover {
+    background: #e0b115; /* Amarelo mais escuro no hover */
+}
+ 
+/* Botão de voltar */
+.cadastro-container .btn-voltar {
+    background: #5086c1; /* Azul */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+ 
+.cadastro-container .btn-voltar:hover {
+    background: #406a9a; /* Azul mais escuro no hover */
+}
+ 
+/* Responsividade */
+@media (max-width: 400px) {
+    .cadastro-container {
+        width: 90%;
+    }
+}

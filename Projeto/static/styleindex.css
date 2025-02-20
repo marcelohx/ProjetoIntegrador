@@ -1,0 +1,169 @@
+/* Definição de variáveis para a paleta de cores */
+:root {
+    --primary-color: #FFFAFA; /* Branco Snow */
+    --secondary-color: #5086c1; /* Azul */
+    --accent-color: #FFCA1A; /* Amarelo */
+    --text-color: #FFFAFA; /* Preto para contraste */
+    --input-bg: #E0E0E0; /* Cinza claro para fundo de entrada */
+    --button-bg: #FFCA1A; /* Amarelo para botões */
+    --button-hover: #E0AE00; /* Amarelo escuro para hover */
+    --text-area: #0000; /* Preto para contraste */
+}
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('imagens/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.container {
+    background: rgba(255, 250, 250, 0.9); /* Branco Snow com transparência */
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    color: #5086c1;
+    margin-bottom: 20px;
+}
+
+/* Estilização do chat */
+.chat-box {
+    width: 100%;
+    height: 300px;
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    border: 2px solid #5086c1; /* Azul */
+    background: #fff;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scrollbar-width: thin;
+    color: #000;
+}
+
+/* Estilização do upload de PDF */
+.pdf-upload {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #5086c1; /* Azul */
+    background: #fff;
+    padding: 10px;
+}
+
+.pdf-upload input[type="file"] {
+    display: none;
+}
+
+.label-upload {
+    background-color: #FFCA1A;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-color);
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.label-upload:hover {
+    background-color: #d3a921;
+    
+}
+
+/* Estilização da área de entrada e botões */
+.input-area {
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 2px solid #5086c1; /* Azul */
+    border-radius: 5px;
+    background: #fff;
+    background-color: var(--input-bg);
+    color: #000;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-enviar {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-enviar:hover {
+    background-color: #3a6a9a;
+}
+
+.btn-voz {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-voz:hover {
+    background-color: #3a6a9a;
+}
+
+#voice-toggle {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#voice-toggle:hover {
+    background-color: #3a6a9a;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
